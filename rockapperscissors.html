@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8>
+		<link rel="stylesheet" href="rockpaperscissors.css">
+		<title>Rock Paper Scissors</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon"  href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Rock-paper-scissors_%28scissors%29.png/600px-Rock-paper-scissors_%28scissors%29.png">
+	</head>
+	<body>
+		<div class="computer">
+			<h1>Computer</h1>
+			<img class="image" src="https://i.dell.com/is/image/DellContent//content/dam/global-site-design/product_images/dell_client_products/desktops/inspiron_desktops/27_7790/general/new-category-page-desktop-black-inspiron-27-7790-3880-800x620.png?fmt=png-alpha&wid=800&hei=620" width="400">
+		</div>
+		<div class="human">
+			<h1>You</h1>
+			<br>
+			<img src="https://i0.wp.com/freepngimages.com/wp-content/uploads/2019/06/open-scissors.png?fit=895%2C895" width="150" height="150"id="scissors" onclick="choice(1)">
+
+			<img src="https://www.pngkit.com/png/full/0-8926_stones-and-rocks-png-image-rock-transparent-background.png" width="150" height="150" id="rock" onclick="choice(2)"><br>
+
+			<img src="https://www.onlygfx.com/wp-content/uploads/2020/02/crumpled-up-ball-paper-2.png" width="150" height="150" id="paper" onclick="choice(3)">
+		</div>
+		<div class="scoreboard">
+			<h1>Score</h1>
+			<p><span id="human">0</span>/<span id="computer">0</span></p>
+		</div>
+
+		<div class="margin-div2">	
+			<div id="choice-container">
+				<img src="" id="human-pick" width="150" height="150">
+				<span class="vs">VS</span>
+				<img src="" id="pc-pick" width="150" height="150">			
+			</div>
+		</div>
+
+		<div class="margin-div">
+			<div id="result-container">
+				<p id="tie"></p>
+			</div>
+		</div>
+		<script src="rockpaperscissors.js"></script>
+	</body>
+</html>
