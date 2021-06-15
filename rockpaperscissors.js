@@ -3,7 +3,6 @@ var humanPoints = document.getElementById('human');
 var computerPoints = document.getElementById('computer');
 var pointsHuman = 0;
 var pointsComputer = 0;
-var scissorsInput = document.getElementById('')
 var humanPick = document.getElementById('human-pick');
 var pcPick = document.getElementById('pc-pick');
 var wasRock = 0;
