@@ -19,14 +19,14 @@ function choice(a){
 	if (a == randomNumber) {
 		draw();
 	if (randomNumber == 1) {
-		humanPick.src = "https://i0.wp.com/freepngimages.com/wp-content/uploads/2019/06/open-scissors.png?fit=895%2C895";
-		pcPick.src = "https://i0.wp.com/freepngimages.com/wp-content/uploads/2019/06/open-scissors.png?fit=895%2C895";
+		humanPick.src = "scissors.png";
+		pcPick.src = "scissors.png";
 	}else if (randomNumber == 2){
-		humanPick.src = "https://www.pngkit.com/png/full/0-8926_stones-and-rocks-png-image-rock-transparent-background.png";
-		pcPick.src = "https://www.pngkit.com/png/full/0-8926_stones-and-rocks-png-image-rock-transparent-background.png";
+		humanPick.src = "rock.png";
+		pcPick.src = "rock.png";
 	}else if(randomNumber == 3){
-		humanPick.src = "https://www.onlygfx.com/wp-content/uploads/2020/02/crumpled-up-ball-paper-2.png";
-		pcPick.src = "https://www.onlygfx.com/wp-content/uploads/2020/02/crumpled-up-ball-paper-2.png";
+		humanPick.src = "paper.png";
+		pcPick.src = "paper.png";
 		}
 	}
 
@@ -36,15 +36,15 @@ function choice(a){
 		wasPaper = 0;
 		wasRock = 0;
 		if (wasScissors >= 3) {
-			pcPick.src = "https://www.pngkit.com/png/full/0-8926_stones-and-rocks-png-image-rock-transparent-background.png";
+			pcPick.src = "rock.png";
 			lose();
 		}else if (randomNumber == 2) {
-			humanPick.src = "https://i0.wp.com/freepngimages.com/wp-content/uploads/2019/06/open-scissors.png?fit=895%2C895";
-			pcPick.src = "https://www.pngkit.com/png/full/0-8926_stones-and-rocks-png-image-rock-transparent-background.png";
+			humanPick.src = "scissors.png";
+			pcPick.src = "rock.png";
 			lose();
 		}else if (randomNumber == 3) {
-			humanPick.src = "https://i0.wp.com/freepngimages.com/wp-content/uploads/2019/06/open-scissors.png?fit=895%2C895";
-			pcPick.src = "https://www.onlygfx.com/wp-content/uploads/2020/02/crumpled-up-ball-paper-2.png";
+			humanPick.src = "scissors.png";
+			pcPick.src = "paper.png";
 			win();		
 		}
 	}
@@ -55,15 +55,15 @@ function choice(a){
 		wasPaper = 0;
 		wasRock ++;
 		if (wasRock >= 3) {
-			pcPick.src = "https://www.onlygfx.com/wp-content/uploads/2020/02/crumpled-up-ball-paper-2.png";
+			pcPick.src = "paper.png";
 			lose();
 		}else if (randomNumber == 1) {
-			humanPick.src = "https://www.pngkit.com/png/full/0-8926_stones-and-rocks-png-image-rock-transparent-background.png";
-			pcPick.src = "https://i0.wp.com/freepngimages.com/wp-content/uploads/2019/06/open-scissors.png?fit=895%2C895";
+			humanPick.src = "rock.png";
+			pcPick.src = "scissors.png";
 			win();		
 		}else if (randomNumber == 3) {
-			humanPick.src = "https://www.pngkit.com/png/full/0-8926_stones-and-rocks-png-image-rock-transparent-background.png";
-			pcPick.src = "https://www.onlygfx.com/wp-content/uploads/2020/02/crumpled-up-ball-paper-2.png";
+			humanPick.src = "rock.png";
+			pcPick.src = "paper.png";
 			lose();		
 		}
 	}
@@ -74,15 +74,15 @@ function choice(a){
 		wasPaper ++;
 		wasRock = 0;
 		if (wasPaper >= 3) {
-			pcPick.src = "https://i0.wp.com/freepngimages.com/wp-content/uploads/2019/06/open-scissors.png?fit=895%2C895";
+			pcPick.src = "scissors.png";
 			lose();
 		}else if (randomNumber == 1) {
-			humanPick.src = "https://www.onlygfx.com/wp-content/uploads/2020/02/crumpled-up-ball-paper-2.png";
-			pcPick.src = "https://i0.wp.com/freepngimages.com/wp-content/uploads/2019/06/open-scissors.png?fit=895%2C895";
+			humanPick.src = "paper.png";
+			pcPick.src = "scissors.png";
 			lose();
 		}else if (randomNumber == 2) {
-			humanPick.src = "https://www.onlygfx.com/wp-content/uploads/2020/02/crumpled-up-ball-paper-2.png";
-			pcPick.src = "https://www.pngkit.com/png/full/0-8926_stones-and-rocks-png-image-rock-transparent-background.png";
+			humanPick.src = "paper.png";
+			pcPick.src = "rock.png";
 			win();
 		}
 	}
