@@ -14,9 +14,9 @@
 			<div><h2>Score</h2></div>
 			<div><h2>Computer</h2></div>
 			<div>
-				<img src="scissors.png" width="150px" id="scissors" onclick="choice(1)">
-				<img src="rock.png" width="100px" id="rock" onclick="choice(2)"><br>
-				<img src="paper.png" width="100px" id="paper" onclick="choice(3)">
+				<img src="scissors.png" width="150px" id="scissors" onclick="choice(id)">
+				<img src="rock.png" width="100px" id="rock" onclick="choice(id)"><br>
+				<img src="paper.png" width="100px" id="paper" onclick="choice(id)">
 			</div>
 			<div>
 			<span id="human">0</span>/<span id="computer">0</span>
@@ -26,8 +26,7 @@
 			</div>
 		</div>
 
-
-		<div class="grid-result">
+		<div id="grid-result">
 			<div>
 				<img id="human-pick" width="150" height="150">
 			</div>
@@ -38,7 +37,7 @@
 			<div></div>
 			<div>
 				<div id="result-container">
-					<p id="tie"></p>
+					<p id="result"></p>
 				</div>
 			</div>
 			<div></div>
