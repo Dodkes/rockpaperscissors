@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8>
+		<title>Rock Paper Scissors</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js" defer></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon"  href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Rock-paper-scissors_%28scissors%29.png/600px-Rock-paper-scissors_%28scissors%29.png">
+	</head>
+	<body>
+		<div class="grid-container">
+			<div><h2>You</h2></div>
+			<div><h2>Score</h2></div>
+			<div><h2>Computer</h2></div>
+			<div>
+				<img src="scissors.png" width="150px" id="scissors" onclick="choice(1)">
+				<img src="rock.png" width="100px" id="rock" onclick="choice(2)"><br>
+				<img src="paper.png" width="100px" id="paper" onclick="choice(3)">
+			</div>
+			<div>
+			<span id="human">0</span>/<span id="computer">0</span>
+			</div>
+			<div>
+				<img class="image" src="computer.jpg" width="300px">
+			</div>
+		</div>
+
+
+		<div class="grid-result">
+			<div>
+				<img id="human-pick" width="150" height="150">
+			</div>
+			<div class="vs">VS</div>
+			<div>
+				<img id="pc-pick" width="150" height="150">			
+			</div>
+			<div></div>
+			<div>
+				<div id="result-container">
+					<p id="tie"></p>
+				</div>
+			</div>
+			<div></div>
+		</div>
+	</body>
+</html>
