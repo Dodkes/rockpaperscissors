@@ -1,35 +1,35 @@
 const container = document.getElementById("result-container");
 const humanPoints = document.getElementById("human");
 const computerPoints = document.getElementById("computer");
-var pointsHuman = 0;
-var pointsComputer = 0;
+let pointsHuman = 0;
+let pointsComputer = 0;
 const humanImg = document.getElementById("human-pick");
 const pcImg = document.getElementById("pc-pick");
 
 const variants = ["scissors", "rock", "paper"];
-const result = document.getElementById("result");
+const resultElement = document.getElementById("result");
 
 function choice(variant) {
   let randomChoice = variants[Math.floor(Math.random() * variants.length)];
 
-  humanImg.src = `${variant}.png`;
-  pcImg.src = `${randomChoice}.png`;
+  humanImg.src = `./assets/${variant}.png`;
+  pcImg.src = `./assets/${randomChoice}.png`;
   document.getElementById("grid-result").style.display = "grid";
   if (variant === randomChoice) {
-    calculate("Draw", "cyan");
+    result("Draw", "cyan");
   } else if (
     (variant === "scissors" && randomChoice === "paper") ||
     (variant === "rock" && randomChoice === "scissors") ||
     (variant === "paper" && randomChoice === "rock")
   ) {
-    calculate("You won", "lightgreen");
+    result("You won", "lightgreen");
   } else {
-    calculate("You lost", "red");
+    result("You lost", "red");
   }
 }
 
-function calculate(message, color) {
-  result.textContent = message;
+function result(message, color) {
+  resultElement.textContent = message;
   container.style.backgroundColor = color;
   container.style.display = "block";
   if (message === "You won") {

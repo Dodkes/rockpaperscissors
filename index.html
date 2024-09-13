@@ -9,20 +9,20 @@
 		<link rel="shortcut icon"  href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Rock-paper-scissors_%28scissors%29.png/600px-Rock-paper-scissors_%28scissors%29.png">
 	</head>
 	<body>
-		<div class="grid-container">
+		<div id="grid-container">
 			<div><h2>You</h2></div>
 			<div><h2>Score</h2></div>
 			<div><h2>Computer</h2></div>
 			<div>
-				<img src="scissors.png" width="150px" id="scissors" onclick="choice(id)">
-				<img src="rock.png" width="100px" id="rock" onclick="choice(id)"><br>
-				<img src="paper.png" width="100px" id="paper" onclick="choice(id)">
+				<img src="./assets/scissors.png" width="150px" id="scissors" onclick="choice(id)">
+				<img src="./assets/rock.png" width="100px" id="rock" onclick="choice(id)"><br>
+				<img src="./assets/paper.png" width="100px" id="paper" onclick="choice(id)">
 			</div>
+			<h1 id="score-container">
+				<span id="human">0</span>/<span id="computer">0</span>
+			</h1>
 			<div>
-			<span id="human">0</span>/<span id="computer">0</span>
-			</div>
-			<div>
-				<img class="image" src="computer.jpg" width="300px">
+				<img class="image" src="./assets/computer.jpg" width="300px">
 			</div>
 		</div>
 
@@ -30,7 +30,7 @@
 			<div>
 				<img id="human-pick" width="150" height="150">
 			</div>
-			<div class="vs">VS</div>
+			<div id="vs">VS</div>
 			<div>
 				<img id="pc-pick" width="150" height="150">			
 			</div>

@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-.grid-container {
+#grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
@@ -45,8 +45,14 @@ body {
   box-shadow: 4px 4px 10px black;
 }
 
-.vs {
+#vs {
   font-size: 30px;
   text-align: center;
   font-weight: bold;
+}
+
+#score-container,
+#vs {
+  color: red;
+  text-shadow: 1px 1px 5px black;
 }
